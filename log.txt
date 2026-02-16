@@ -1,0 +1,99 @@
+2026-02-08 12:41:51.622 +08 [4099034] LOG:  starting PostgreSQL 18.1 on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0, 64-bit
+2026-02-08 12:41:51.622 +08 [4099034] LOG:  listening on IPv4 address "127.0.0.1", port 5001
+2026-02-08 12:41:51.629 +08 [4099034] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5001"
+2026-02-08 12:41:51.639 +08 [4099040] LOG:  database system was shut down at 2026-02-08 12:41:20 +08
+2026-02-08 12:41:51.648 +08 [4099034] LOG:  database system is ready to accept connections
+2026-02-08 12:46:52.010 +08 [4099038] LOG:  checkpoint starting: time
+2026-02-08 12:46:52.080 +08 [4099038] LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 33 SLRU buffers; 0 WAL file(s) added, 0 removed, 2 recycled; write=0.007 s, sync=0.041 s, total=0.070 s; sync files=339, longest=0.010 s, average=0.001 s; distance=38848 kB, estimate=38848 kB; lsn=0/3D4E8C8, redo lsn=0/3D4D2D0
+2026-02-08 12:47:34.325 +08 [4099087] LOG:  could not receive data from client: Connection reset by peer
+2026-02-08 12:47:34.325 +08 [4099087] LOG:  unexpected EOF on client connection with an open transaction
+2026-02-08 12:47:34.325 +08 [4099084] LOG:  could not send data to client: Broken pipe
+2026-02-08 12:47:34.325 +08 [4099084] FATAL:  connection to client lost
+2026-02-08 12:47:34.325 +08 [4099090] LOG:  could not receive data from client: Connection reset by peer
+2026-02-08 12:47:34.326 +08 [4099090] LOG:  unexpected EOF on client connection with an open transaction
+2026-02-08 12:47:34.325 +08 [4099089] LOG:  could not send data to client: Broken pipe
+2026-02-08 12:47:34.326 +08 [4099089] FATAL:  connection to client lost
+2026-02-08 12:47:34.325 +08 [4099088] LOG:  could not receive data from client: Connection reset by peer
+2026-02-08 12:47:34.326 +08 [4099088] LOG:  unexpected EOF on client connection with an open transaction
+2026-02-08 12:47:34.325 +08 [4099081] LOG:  could not receive data from client: Connection reset by peer
+2026-02-08 12:47:34.327 +08 [4099081] LOG:  unexpected EOF on client connection with an open transaction
+2026-02-08 12:47:34.327 +08 [4099082] LOG:  could not send data to client: Broken pipe
+2026-02-08 12:47:34.327 +08 [4099082] FATAL:  connection to client lost
+2026-02-08 12:47:34.328 +08 [4099086] LOG:  could not send data to client: Broken pipe
+2026-02-08 12:47:34.328 +08 [4099086] FATAL:  connection to client lost
+2026-02-08 12:47:34.331 +08 [4099083] LOG:  could not send data to client: Broken pipe
+2026-02-08 12:47:34.331 +08 [4099083] FATAL:  connection to client lost
+2026-02-08 12:47:34.325 +08 [4099085] LOG:  could not send data to client: Broken pipe
+2026-02-08 12:47:34.332 +08 [4099085] FATAL:  connection to client lost
+2026-02-08 12:47:36.317 +08 [4099034] LOG:  received fast shutdown request
+2026-02-08 12:47:36.322 +08 [4099034] LOG:  aborting any active transactions
+2026-02-08 12:47:36.325 +08 [4099034] LOG:  background worker "logical replication launcher" (PID 4099043) exited with exit code 1
+2026-02-08 12:47:36.327 +08 [4099038] LOG:  shutting down
+2026-02-08 12:47:36.331 +08 [4099038] LOG:  checkpoint starting: shutdown immediate
+2026-02-08 12:47:36.577 +08 [4099038] LOG:  checkpoint complete: wrote 8015 buffers (97.8%), wrote 21 SLRU buffers; 0 WAL file(s) added, 0 removed, 1 recycled; write=0.189 s, sync=0.038 s, total=0.250 s; sync files=18, longest=0.025 s, average=0.003 s; distance=4751 kB, estimate=35439 kB; lsn=0/41F1240, redo lsn=0/41F1240
+2026-02-08 12:47:36.594 +08 [4099034] LOG:  database system is shut down
+2026-02-08 12:47:36.654 +08 [4100476] LOG:  starting PostgreSQL 18.1 on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0, 64-bit
+2026-02-08 12:47:36.654 +08 [4100476] LOG:  listening on IPv4 address "127.0.0.1", port 5001
+2026-02-08 12:47:36.663 +08 [4100476] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5001"
+2026-02-08 12:47:36.671 +08 [4100482] LOG:  database system was shut down at 2026-02-08 12:47:36 +08
+2026-02-08 12:47:36.679 +08 [4100476] LOG:  database system is ready to accept connections
+2026-02-08 12:47:36.762 +08 [4100480] LOG:  checkpoint starting: immediate force wait
+2026-02-08 12:47:36.794 +08 [4100480] LOG:  checkpoint complete: wrote 1 buffers (0.0%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.008 s, sync=0.007 s, total=0.032 s; sync files=3, longest=0.004 s, average=0.003 s; distance=0 kB, estimate=0 kB; lsn=0/41F1680, redo lsn=0/41F1628
+2026-02-08 12:47:45.526 +08 [4100527] LOG:  could not receive data from client: Connection reset by peer
+2026-02-08 12:47:45.526 +08 [4100528] LOG:  could not receive data from client: Connection reset by peer
+2026-02-08 12:47:45.526 +08 [4100527] LOG:  unexpected EOF on client connection with an open transaction
+2026-02-08 12:47:45.526 +08 [4100528] LOG:  unexpected EOF on client connection with an open transaction
+2026-02-08 12:47:45.526 +08 [4100522] LOG:  could not receive data from client: Connection reset by peer
+2026-02-08 12:47:45.526 +08 [4100525] LOG:  could not receive data from client: Connection reset by peer
+2026-02-08 12:47:45.526 +08 [4100525] LOG:  unexpected EOF on client connection with an open transaction
+2026-02-08 12:47:45.529 +08 [4100526] LOG:  could not receive data from client: Connection reset by peer
+2026-02-08 12:47:45.529 +08 [4100523] LOG:  could not receive data from client: Connection reset by peer
+2026-02-08 12:47:45.529 +08 [4100519] LOG:  could not receive data from client: Connection reset by peer
+2026-02-08 12:47:45.529 +08 [4100526] LOG:  unexpected EOF on client connection with an open transaction
+2026-02-08 12:47:45.529 +08 [4100519] LOG:  unexpected EOF on client connection with an open transaction
+2026-02-08 12:47:45.531 +08 [4100520] LOG:  could not receive data from client: Connection reset by peer
+2026-02-08 12:47:45.531 +08 [4100524] LOG:  could not receive data from client: Connection reset by peer
+2026-02-08 12:47:45.533 +08 [4100520] LOG:  unexpected EOF on client connection with an open transaction
+2026-02-08 12:48:34.496 +08 [4100476] LOG:  received fast shutdown request
+2026-02-08 12:48:34.501 +08 [4100476] LOG:  aborting any active transactions
+2026-02-08 12:48:34.504 +08 [4100476] LOG:  background worker "logical replication launcher" (PID 4100485) exited with exit code 1
+2026-02-08 12:48:34.505 +08 [4100480] LOG:  shutting down
+2026-02-08 12:48:34.509 +08 [4100480] LOG:  checkpoint starting: shutdown immediate
+2026-02-08 12:48:34.734 +08 [4100480] LOG:  checkpoint complete: wrote 7926 buffers (96.8%), wrote 12 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.188 s, sync=0.025 s, total=0.230 s; sync files=329, longest=0.006 s, average=0.001 s; distance=5311 kB, estimate=5311 kB; lsn=0/4721298, redo lsn=0/4721298
+2026-02-08 12:48:34.754 +08 [4100476] LOG:  database system is shut down
+2026-02-08 12:48:34.827 +08 [4100579] LOG:  starting PostgreSQL 18.1 on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0, 64-bit
+2026-02-08 12:48:34.827 +08 [4100579] LOG:  listening on IPv4 address "127.0.0.1", port 5003
+2026-02-08 12:48:34.835 +08 [4100579] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5003"
+2026-02-08 12:48:34.846 +08 [4100585] LOG:  database system was shut down at 2026-02-08 12:48:34 +08
+2026-02-08 12:48:34.854 +08 [4100579] LOG:  database system is ready to accept connections
+2026-02-08 12:48:34.930 +08 [4100583] LOG:  checkpoint starting: immediate force wait
+2026-02-08 12:48:34.964 +08 [4100583] LOG:  checkpoint complete: wrote 1 buffers (0.0%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.009 s, sync=0.007 s, total=0.034 s; sync files=3, longest=0.004 s, average=0.003 s; distance=1 kB, estimate=1 kB; lsn=0/4721770, redo lsn=0/4721718
+2026-02-08 12:53:34.032 +08 [4100583] LOG:  checkpoint starting: time
+2026-02-08 12:53:34.123 +08 [4100583] LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 32 SLRU buffers; 0 WAL file(s) added, 0 removed, 2 recycled; write=0.006 s, sync=0.065 s, total=0.092 s; sync files=330, longest=0.025 s, average=0.001 s; distance=39190 kB, estimate=39190 kB; lsn=0/6D695B0, redo lsn=0/6D67248
+2026-02-08 12:56:41.318 +08 [4100579] LOG:  received fast shutdown request
+2026-02-08 12:56:41.322 +08 [4100579] LOG:  aborting any active transactions
+2026-02-08 12:56:41.324 +08 [4100579] LOG:  background worker "logical replication launcher" (PID 4100591) exited with exit code 1
+2026-02-08 12:56:41.326 +08 [4100583] LOG:  shutting down
+2026-02-08 12:56:41.331 +08 [4100583] LOG:  checkpoint starting: shutdown immediate
+2026-02-08 12:56:41.664 +08 [4100583] LOG:  checkpoint complete: wrote 7191 buffers (87.8%), wrote 22 SLRU buffers; 0 WAL file(s) added, 0 removed, 1 recycled; write=0.307 s, sync=0.010 s, total=0.338 s; sync files=17, longest=0.009 s, average=0.001 s; distance=7322 kB, estimate=36003 kB; lsn=0/748DA68, redo lsn=0/748DA68
+2026-02-08 12:56:41.687 +08 [4100579] LOG:  database system is shut down
+2026-02-08 12:59:52.445 +08 [4102221] LOG:  starting PostgreSQL 18.1 on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0, 64-bit
+2026-02-08 12:59:52.445 +08 [4102221] LOG:  listening on IPv4 address "127.0.0.1", port 5003
+2026-02-08 12:59:52.453 +08 [4102221] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5003"
+2026-02-08 12:59:52.464 +08 [4102227] LOG:  database system was shut down at 2026-02-08 12:56:41 +08
+2026-02-08 12:59:52.472 +08 [4102221] LOG:  database system is ready to accept connections
+2026-02-08 12:59:52.556 +08 [4102225] LOG:  checkpoint starting: immediate force wait
+2026-02-08 12:59:52.579 +08 [4102225] LOG:  checkpoint complete: wrote 1 buffers (0.0%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.007 s, sync=0.005 s, total=0.024 s; sync files=3, longest=0.002 s, average=0.002 s; distance=1 kB, estimate=1 kB; lsn=0/748DFD0, redo lsn=0/748DF78
+2026-02-08 13:04:52.843 +08 [4102225] LOG:  checkpoint starting: time
+2026-02-08 13:04:52.922 +08 [4102225] LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 32 SLRU buffers; 0 WAL file(s) added, 0 removed, 2 recycled; write=0.008 s, sync=0.051 s, total=0.080 s; sync files=330, longest=0.018 s, average=0.001 s; distance=38789 kB, estimate=38789 kB; lsn=0/9A710C8, redo lsn=0/9A6F3F0
+2026-02-08 13:09:52.850 +08 [4102225] LOG:  checkpoint starting: time
+2026-02-08 13:09:53.083 +08 [4102225] LOG:  checkpoint complete: wrote 2 buffers (0.0%), wrote 22 SLRU buffers; 0 WAL file(s) added, 0 removed, 1 recycled; write=0.207 s, sync=0.011 s, total=0.234 s; sync files=15, longest=0.005 s, average=0.001 s; distance=7067 kB, estimate=35616 kB; lsn=0/A156078, redo lsn=0/A156020
+2026-02-08 13:27:42.957 +08 [4102221] LOG:  received smart shutdown request
+2026-02-08 13:27:42.962 +08 [4102221] LOG:  received SIGHUP, reloading configuration files
+2026-02-08 13:27:42.963 +08 [4102221] LOG:  parameter "shared_buffers" cannot be changed without restarting the server
+2026-02-08 13:27:42.963 +08 [4102221] LOG:  configuration file "/tmp/jeryl/pgdata-cs3223-hw/postgresql.conf" contains errors; unaffected changes were applied
+2026-02-08 13:27:42.963 +08 [4102221] LOG:  background worker "logical replication launcher" (PID 4102230) exited with exit code 1
+2026-02-08 13:27:42.964 +08 [4102225] LOG:  shutting down
+2026-02-08 13:27:42.968 +08 [4102225] LOG:  checkpoint starting: shutdown immediate
+2026-02-08 13:27:43.261 +08 [4102225] LOG:  checkpoint complete: wrote 7152 buffers (87.3%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.274 s, sync=0.008 s, total=0.298 s; sync files=12, longest=0.007 s, average=0.001 s; distance=0 kB, estimate=32055 kB; lsn=0/A156128, redo lsn=0/A156128
+2026-02-08 13:27:43.286 +08 [4102221] LOG:  database system is shut down
