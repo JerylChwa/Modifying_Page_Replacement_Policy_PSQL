@@ -441,8 +441,7 @@ StrategyGetBuffer(BufferAccessStrategy strategy, uint32 *buf_state, bool *from_r
 				
 				// Move candidate to tail
 				RemoveFromQueue(candidate);
-				InsertAtTail(candidate);
-				AdvanceNext();
+				InsertAtTail(candidate);				
 				SpinLockRelease(&StrategyControl->buffer_strategy_lock);
 				return buf;
 			}		
