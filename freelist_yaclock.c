@@ -82,6 +82,9 @@ typedef struct
 /* Pointers to shared state */
 static BufferStrategyControl *StrategyControl = NULL;
 static YAClockBufferData *YAClockBuffers = NULL;
+static void InsertAtTail(int buf_id);
+static void RemoveFromQueue(int buf_id);
+static void AdvanceNext(void);
 
 /*
  * Private (non-shared) state for managing a ring of shared buffers to re-use.
@@ -164,7 +167,7 @@ static void InsertAtTail(int buf_id)
 
 	StrategyControl->queueTail = buf_id;
 
-	if (StrtategyControl->queueHead < 0)
+	if (StrategyControl->queueHead < 0)
 		StrategyControl->queueHead = buf_id;
 }
 
@@ -396,7 +399,7 @@ StrategyGetBuffer(BufferAccessStrategy strategy, uint32 *buf_state, bool *from_r
 	SpinLockRelease(&StrategyControl->buffer_strategy_lock);
 
 	// Case 3 : No free buffers, search for victim using YACLOCL algo
-	init trycounter = NBuffers;
+	int trycounter = NBuffers;
 	for (;;)
 	{
 		SpinLockAcquire(&StrategyControl->buffer_strategy_lock);
