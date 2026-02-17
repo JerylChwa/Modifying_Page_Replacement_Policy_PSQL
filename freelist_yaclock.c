@@ -163,7 +163,7 @@ static void InsertAtTail(int buf_id)
 	YAClockBuffers[buf_id].prevInQueue = StrategyControl -> queueTail;
 
 	if (StrategyControl->queueTail >= 0)
-		YACLockBuffers[StrategyControl->queueTail].nextInQueue = buf_id;
+		YAClockBuffers[StrategyControl->queueTail].nextInQueue = buf_id;
 
 	StrategyControl->queueTail = buf_id;
 
@@ -399,7 +399,7 @@ StrategyGetBuffer(BufferAccessStrategy strategy, uint32 *buf_state, bool *from_r
 	SpinLockRelease(&StrategyControl->buffer_strategy_lock);
 
 	// Case 3 : No free buffers, search for victim using YACLOCL algo
-	int trycounter = NBuffers;
+	trycounter = NBuffers;
 	for (;;)
 	{
 		SpinLockAcquire(&StrategyControl->buffer_strategy_lock);
